@@ -1,5 +1,6 @@
 /*
- * 编写 SortTransaction 类，将它们排序，并在标准输出中打印
+ * 交易排序测试用例 
+ * 编写 SortTransaction 类，将它们排序，并在标准输出中打印。
  */
 
 package Exercises.E2_1_22;
