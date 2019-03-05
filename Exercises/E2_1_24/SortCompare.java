@@ -1,3 +1,7 @@
+/*
+ * 使用 SortCompare 来评估立哨兵的插入排序的效果。
+ */
+
 package Exercises.E2_1_24;
 
 import StdLibrary.*;
