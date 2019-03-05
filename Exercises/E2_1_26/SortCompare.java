@@ -1,5 +1,5 @@
 /*
- * 使用 SortCompare 来评估这种不需要交换的插入排序的效果
+ * 使用 SortCompare 来比较这种能够处理 int 值的插入排序和能够隐式地使用自动装箱和拆箱转换 Integer 值的插入排序。
  */
 
 package Exercises.E2_1_26;
