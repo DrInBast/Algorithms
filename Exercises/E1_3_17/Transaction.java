@@ -1,7 +1,7 @@
 /*
  * 为 Transaction 类编写能够解析字符串数据的构造函数，
  * 它接受一个 String 参数指定的初始值，格式如下：
- * Turing 5/22/1939 11.99
+ * Turing 5/22/1939 11.99。
  */
 
 package Exercises.E1_3_17;
