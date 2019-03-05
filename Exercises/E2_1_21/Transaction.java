@@ -1,5 +1,6 @@
-/*
- *扩展 Transaction 类，实现 Comparable 接口，使金额能够按照金额排序
+/* 
+ * 可比较的交易
+ * 扩展 Transaction 类，实现 Comparable 接口，使金额能够按照金额排序。
  */
 
 package Exercises.E2_1_21;
