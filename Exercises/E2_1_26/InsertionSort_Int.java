@@ -1,3 +1,8 @@
+/*
+ * 原始数据类型
+ * 编写一个能够处理 int 值的插入排序新版本。
+ */
+
 package Exercises.E2_1_26;
 
 import StdLibrary.*;
