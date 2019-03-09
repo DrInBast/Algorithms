@@ -1,3 +1,9 @@
+/*
+ * 运行时间曲线图
+ * 编写测试用例，使用 StdDraw 在各种不同规模的随机输入下降算法的平均运行时间绘制成一张去想吐。
+ */
+
+
 package Exercises.E2_1_32;
 
 import StdLibrary.*;
