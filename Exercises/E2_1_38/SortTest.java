@@ -24,14 +24,24 @@ public class SortTest {
 
     public static double timeRandomInput (String distribution, String alg, int N, int T) {
         double total = 0.0;
-        Double[] a = new Double [N];
         
-        if (distribution.equals("1"))
+        if (distribution.equals("1")) {
+            String[] a = new String [N];
+
+            for (int t = 0; t < T; t ++) {
+                for (int i = 0; i < N; i ++)
+                    a[i] = getRandomString();
+                
+                int randRank = StdRandom.uniform(0, N);
+                double d = StdRandom.uniform();
+
+                a[randRank] = Double.toString(d);
+            }
+        }
             
-        else if (distribution.equals("2"))
+        else if (distribution.equals("2")) {}
             
-        else if (distribution.equals("3")) {
-            
+        else if (distribution.equals("3")) {}
 
         return total;
     }
