@@ -50,15 +50,26 @@ public class SortTest {
                 }
                 
                 for(int i = N - 1; i >= 0; i --) {
-                    Double tmp = a[i];
-                    int randomRank = StdRandom.uniform(Math.max(0, i - 10 + distance[i]), Math.min(i + 10 + distance[i], N));
                     
-                    a[i] = a[randomRank];
-                    a[randomRank] = tmp;
+                    int left = i + distance[i] - 10,
+                        right = i + distance[i] + 10,
+                        randRank = StdRandom.uniform(Math.max(0, left), Math.min(right, N - 1));
+                    
+                    if (Math.abs(distance[randRank]) + Math.abs(i - randRank) < 10) {
+                        Double tmp = a[i];      
+                        a[i] = a[randRank];
+                        a[randRank] = tmp;
 
-                    distance[randomRank] += i - randomRank;
-                    distance[i] += randomRank - i;
+                        Integer tmpD = distance[i];
+                        distance[i] = distance[randRank];
+                        distance[randRank] = tmpD;
+
+                        distance[randRank] += i - randRank;
+                        distance[i] += randRank - i;
+                    }
+                   
                 }
+                total += time(alg, a);
             }
         else if (distribution.equals("3")) {
             int n = (int) (N * 0.95);
