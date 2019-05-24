@@ -1,3 +1,5 @@
+
+
 /*
  * 不同类型的元素
  * 编写测试用例，生成有多种数据类型元素组成的数组，元素主键随机。
@@ -12,6 +14,19 @@ import StdLibrary.*;
 import SortLibrary.*;
 
 public class SortTest {
+    //生成随机字符串算法
+    public static String getRandomString() {
+        int length = StdRandom.uniform(10, 15);
+        String base = "abcdefghijklmnopqrstuvwxyz0123456789";
+
+        StringBuffer sb = new StringBuffer();
+        for (int i = 0; i < length; i++) {
+            int number = StdRandom.uniform(0, 35);
+            sb.append(base.charAt(number));   
+        }
+        return sb.toString();   
+    }
+    
     public static double time (String alg, Double[] a) {
         Stopwatch timer = new Stopwatch();
 
