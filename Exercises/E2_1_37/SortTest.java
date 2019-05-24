@@ -1,9 +1,9 @@
 /*
  * 不均匀的数据
  * 编写测试用例，生成不均匀的测试数据。
- *  1.95% 有序，其余部分为随机值。
- *  2.所有元素与其正确位置的距离不超过 10。
- *  3.5% 的元素随机分布在数组中，剩下的元素有序。
+ *  1. 95% 有序，其余部分为随机值。
+ *  2. 所有元素与其正确位置的距离不超过 10。
+ *  3. 5% 的元素随机分布在数组中，剩下的元素有序。
  */
 
 package Exercises.E2_1_37;
@@ -53,7 +53,7 @@ public class SortTest {
                     
                     int left = i + distance[i] - 10,
                         right = i + distance[i] + 10,
-                        randRank = StdRandom.uniform(Math.max(0, left), Math.min(right, N - 1));
+                        randRank = StdRandom.uniform(Math.max(0, left), Math.min(right, N));
                     
                     if (Math.abs(distance[randRank]) + Math.abs(i - randRank) < 10) {
                         Double tmp = a[i];      
